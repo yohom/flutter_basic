@@ -1,4 +1,5 @@
 import 'package:basic/painting_nodes/clip_rect_demo.dart';
+import 'package:basic/painting_nodes/clip_rrect_demo.dart';
 import 'package:basic/painting_nodes/opacity_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
@@ -31,6 +32,8 @@ class HomePage extends StatelessWidget {
             Entry(title: 'Opacity', route: OpacityDemo()),
             SPACE_SMALL,
             Entry(title: 'ClipRect', route: ClipRectDemo()),
+            SPACE_SMALL,
+            Entry(title: 'ClipRRect', route: ClipRRectDemo()),
           ],
         ),
       ),
