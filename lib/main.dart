@@ -28,8 +28,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text('basic.dart')),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            SectionTitle(),
             Entry(title: 'Opacity', route: OpacityDemo()),
             Entry(title: 'ClipRect', route: ClipRectDemo()),
             Entry(title: 'ClipRRect', route: ClipRRectDemo()),
@@ -38,6 +39,28 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class SectionTitle extends StatelessWidget {
+  const SectionTitle({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        SPACE_BIG,
+        Align(
+          alignment: AlignmentDirectional.centerStart,
+          child: Text(
+            'PAINTING NODES',
+            style: Theme.of(context).textTheme.headline,
+          ),
+        ),
+      ],
     );
   }
 }
