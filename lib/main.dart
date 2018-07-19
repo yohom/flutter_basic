@@ -1,3 +1,4 @@
+import 'package:basic/painting_nodes/clip_oval_demo.dart';
 import 'package:basic/painting_nodes/clip_rect_demo.dart';
 import 'package:basic/painting_nodes/clip_rrect_demo.dart';
 import 'package:basic/painting_nodes/opacity_demo.dart';
@@ -27,13 +28,11 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Entry(title: 'Opacity', route: OpacityDemo()),
-            SPACE_SMALL,
             Entry(title: 'ClipRect', route: ClipRectDemo()),
-            SPACE_SMALL,
             Entry(title: 'ClipRRect', route: ClipRRectDemo()),
+            Entry(title: 'ClipOval', route: ClipOvalDemo()),
           ],
         ),
       ),
@@ -56,9 +55,15 @@ class Entry extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      onPressed: () => navigate(context, route),
-      child: Text(title),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        RaisedButton(
+          onPressed: () => navigate(context, route),
+          child: Text(title),
+        ),
+        SPACE_SMALL,
+      ],
     );
   }
 }
