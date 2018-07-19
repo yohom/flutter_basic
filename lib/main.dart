@@ -1,4 +1,5 @@
 import 'package:basic/painting_nodes/clip_oval_demo.dart';
+import 'package:basic/painting_nodes/clip_path_demo.dart';
 import 'package:basic/painting_nodes/clip_rect_demo.dart';
 import 'package:basic/painting_nodes/clip_rrect_demo.dart';
 import 'package:basic/painting_nodes/opacity_demo.dart';
@@ -33,6 +34,7 @@ class HomePage extends StatelessWidget {
             Entry(title: 'ClipRect', route: ClipRectDemo()),
             Entry(title: 'ClipRRect', route: ClipRRectDemo()),
             Entry(title: 'ClipOval', route: ClipOvalDemo()),
+            Entry(title: 'ClipPath', route: ClipPathDemo()),
           ],
         ),
       ),
