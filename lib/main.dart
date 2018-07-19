@@ -3,6 +3,7 @@ import 'package:basic/painting_nodes/clip_path_demo.dart';
 import 'package:basic/painting_nodes/clip_rect_demo.dart';
 import 'package:basic/painting_nodes/clip_rrect_demo.dart';
 import 'package:basic/painting_nodes/opacity_demo.dart';
+import 'package:basic/painting_nodes/shader_mask_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
 
@@ -32,6 +33,7 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             SectionTitle(),
             Entry(title: 'Opacity', route: OpacityDemo()),
+            Entry(title: 'ShaderMask', route: ShaderMaskDemo()),
             Entry(title: 'ClipRect', route: ClipRectDemo()),
             Entry(title: 'ClipRRect', route: ClipRRectDemo()),
             Entry(title: 'ClipOval', route: ClipOvalDemo()),
