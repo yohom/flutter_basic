@@ -1,4 +1,5 @@
-import 'package:basic/opacity_demo.dart';
+import 'package:basic/painting_nodes/clip_rect_demo.dart';
+import 'package:basic/painting_nodes/opacity_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
 
@@ -28,12 +29,17 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Entry(title: 'Opacity', route: OpacityDemo()),
+            SPACE_SMALL,
+            Entry(title: 'ClipRect', route: ClipRectDemo()),
           ],
         ),
       ),
     );
   }
 }
+
+const SPACE_SMALL = SizedBox(height: 8.0);
+const SPACE_BIG = SizedBox(height: 16.0);
 
 class Entry extends StatelessWidget {
   final String title;
