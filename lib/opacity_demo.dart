@@ -19,9 +19,7 @@ class _OpacityDemoState extends State<OpacityDemo> {
         children: <Widget>[
           Slider(
             value: _opacity,
-            onChanged: (value) {
-              setState(() => _opacity = value);
-            },
+            onChanged: (value) => setState(() => _opacity = value),
           ),
           Opacity(
             opacity: _opacity,
