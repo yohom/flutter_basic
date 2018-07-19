@@ -1,3 +1,4 @@
+import 'package:basic/painting_nodes/backdrop_filter_demo.dart';
 import 'package:basic/painting_nodes/clip_oval_demo.dart';
 import 'package:basic/painting_nodes/clip_path_demo.dart';
 import 'package:basic/painting_nodes/clip_rect_demo.dart';
@@ -34,6 +35,7 @@ class HomePage extends StatelessWidget {
             SectionTitle(),
             Entry(title: 'Opacity', route: OpacityDemo()),
             Entry(title: 'ShaderMask', route: ShaderMaskDemo()),
+            Entry(title: 'BackdropFilter', route: BackdropFilterDemo()),
             Entry(title: 'ClipRect', route: ClipRectDemo()),
             Entry(title: 'ClipRRect', route: ClipRRectDemo()),
             Entry(title: 'ClipOval', route: ClipOvalDemo()),
