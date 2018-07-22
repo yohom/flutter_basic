@@ -8,6 +8,7 @@ import 'package:basic/painting_nodes/physical_model_demo.dart';
 import 'package:basic/painting_nodes/shader_mask_demo.dart';
 import 'package:basic/position_sizing_nodes/fitted_box_demo.dart';
 import 'package:basic/position_sizing_nodes/fractional_translation_demo.dart';
+import 'package:basic/position_sizing_nodes/padding_demo.dart';
 import 'package:basic/position_sizing_nodes/rotated_box_demo.dart';
 import 'package:basic/position_sizing_nodes/transform_demo.dart';
 import 'package:basic/router.dart';
@@ -53,6 +54,7 @@ class HomePage extends StatelessWidget {
               route: FractionalTranslationDemo(),
             ),
             Entry(title: 'RotatedBox', route: RotatedBoxDemo()),
+            Entry(title: 'Padding', route: PaddingDemo()),
           ],
         ),
       ),
