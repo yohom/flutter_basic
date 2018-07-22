@@ -6,6 +6,7 @@ import 'package:basic/painting_nodes/clip_rrect_demo.dart';
 import 'package:basic/painting_nodes/opacity_demo.dart';
 import 'package:basic/painting_nodes/physical_model_demo.dart';
 import 'package:basic/painting_nodes/shader_mask_demo.dart';
+import 'package:basic/position_sizing_nodes/fitted_box_demo.dart';
 import 'package:basic/position_sizing_nodes/transform_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +45,7 @@ class HomePage extends StatelessWidget {
             Entry(title: 'PhysicalModel', route: PhysicalModelDemo()),
             SectionTitle(title: 'POSITIONING AND SIZING NODES'),
             Entry(title: 'Transform', route: TransformDemo()),
+            Entry(title: 'FittedBox', route: FittedBoxDemo()),
           ],
         ),
       ),
