@@ -10,7 +10,7 @@ class BackdropFilterDemo extends StatelessWidget {
           ConstrainedBox(
               constraints: BoxConstraints.expand(), child: FlutterLogo()),
           BackdropFilter(
-            filter: ui.ImageFilter.blur(sigmaX: 100.0, sigmaY: 10.0),
+            filter: ui.ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
             child: Center(
               child: Text(
                 'Frosted',
