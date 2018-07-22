@@ -6,6 +6,7 @@ import 'package:basic/painting_nodes/clip_rrect_demo.dart';
 import 'package:basic/painting_nodes/opacity_demo.dart';
 import 'package:basic/painting_nodes/physical_model_demo.dart';
 import 'package:basic/painting_nodes/shader_mask_demo.dart';
+import 'package:basic/position_sizing_nodes/transform_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
 
@@ -30,10 +31,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('basic.dart')),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+        child: ListView(
           children: <Widget>[
-            SectionTitle(),
+            SectionTitle(title: 'PAINTING NODES'),
             Entry(title: 'Opacity', route: OpacityDemo()),
             Entry(title: 'ShaderMask', route: ShaderMaskDemo()),
             Entry(title: 'BackdropFilter', route: BackdropFilterDemo()),
@@ -42,6 +42,8 @@ class HomePage extends StatelessWidget {
             Entry(title: 'ClipOval', route: ClipOvalDemo()),
             Entry(title: 'ClipPath', route: ClipPathDemo()),
             Entry(title: 'PhysicalModel', route: PhysicalModelDemo()),
+            SectionTitle(title: 'POSITIONING AND SIZING NODES'),
+            Entry(title: 'Transform', route: TransformDemo()),
           ],
         ),
       ),
@@ -50,8 +52,11 @@ class HomePage extends StatelessWidget {
 }
 
 class SectionTitle extends StatelessWidget {
+  final String title;
+
   const SectionTitle({
     Key key,
+    @required this.title,
   }) : super(key: key);
 
   @override
@@ -62,7 +67,7 @@ class SectionTitle extends StatelessWidget {
         Align(
           alignment: AlignmentDirectional.centerStart,
           child: Text(
-            'PAINTING NODES',
+            title,
             style: Theme.of(context).textTheme.headline,
           ),
         ),
