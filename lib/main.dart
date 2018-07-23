@@ -13,6 +13,7 @@ import 'package:basic/position_sizing_nodes/fitted_box_demo.dart';
 import 'package:basic/position_sizing_nodes/fractional_translation_demo.dart';
 import 'package:basic/position_sizing_nodes/padding_demo.dart';
 import 'package:basic/position_sizing_nodes/rotated_box_demo.dart';
+import 'package:basic/position_sizing_nodes/sized_box_demo.dart';
 import 'package:basic/position_sizing_nodes/transform_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
@@ -64,6 +65,7 @@ class HomePage extends StatelessWidget {
               title: 'CustomSingleChildLayout',
               route: CustomSingleChildLayoutDemo(),
             ),
+            Entry(title: 'SizedBox', route: SizedBoxDemo()),
           ],
         ),
       ),
