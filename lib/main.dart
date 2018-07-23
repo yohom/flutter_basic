@@ -7,6 +7,7 @@ import 'package:basic/painting_nodes/opacity_demo.dart';
 import 'package:basic/painting_nodes/physical_model_demo.dart';
 import 'package:basic/painting_nodes/shader_mask_demo.dart';
 import 'package:basic/position_sizing_nodes/align_demo.dart';
+import 'package:basic/position_sizing_nodes/center_demo.dart';
 import 'package:basic/position_sizing_nodes/fitted_box_demo.dart';
 import 'package:basic/position_sizing_nodes/fractional_translation_demo.dart';
 import 'package:basic/position_sizing_nodes/padding_demo.dart';
@@ -57,6 +58,7 @@ class HomePage extends StatelessWidget {
             Entry(title: 'RotatedBox', route: RotatedBoxDemo()),
             Entry(title: 'Padding', route: PaddingDemo()),
             Entry(title: 'Align', route: AlignDemo()),
+            Entry(title: 'Center', route: CenterDemo()),
           ],
         ),
       ),
