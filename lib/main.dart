@@ -8,6 +8,7 @@ import 'package:basic/painting_nodes/physical_model_demo.dart';
 import 'package:basic/painting_nodes/shader_mask_demo.dart';
 import 'package:basic/position_sizing_nodes/align_demo.dart';
 import 'package:basic/position_sizing_nodes/center_demo.dart';
+import 'package:basic/position_sizing_nodes/constrained_box_demo.dart';
 import 'package:basic/position_sizing_nodes/custom_single_child_layout_demo.dart';
 import 'package:basic/position_sizing_nodes/fitted_box_demo.dart';
 import 'package:basic/position_sizing_nodes/fractional_translation_demo.dart';
@@ -66,6 +67,7 @@ class HomePage extends StatelessWidget {
               route: CustomSingleChildLayoutDemo(),
             ),
             Entry(title: 'SizedBox', route: SizedBoxDemo()),
+            Entry(title: 'ConstrainedBox', route: ConstrainedBoxDemo()),
           ],
         ),
       ),
