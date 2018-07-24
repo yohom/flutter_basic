@@ -12,6 +12,7 @@ import 'package:basic/position_sizing_nodes/constrained_box_demo.dart';
 import 'package:basic/position_sizing_nodes/custom_single_child_layout_demo.dart';
 import 'package:basic/position_sizing_nodes/fitted_box_demo.dart';
 import 'package:basic/position_sizing_nodes/fractional_translation_demo.dart';
+import 'package:basic/position_sizing_nodes/fractionally_sized_box_demo.dart';
 import 'package:basic/position_sizing_nodes/padding_demo.dart';
 import 'package:basic/position_sizing_nodes/rotated_box_demo.dart';
 import 'package:basic/position_sizing_nodes/sized_box_demo.dart';
@@ -68,6 +69,10 @@ class HomePage extends StatelessWidget {
             ),
             Entry(title: 'SizedBox', route: SizedBoxDemo()),
             Entry(title: 'ConstrainedBox', route: ConstrainedBoxDemo()),
+            Entry(
+              title: 'FractionallySizedBox',
+              route: FractionallySizedBoxDemo(),
+            ),
           ],
         ),
       ),
