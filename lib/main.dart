@@ -1,3 +1,4 @@
+import 'package:basic/layout_nodes/column_demo.dart';
 import 'package:basic/painting_nodes/backdrop_filter_demo.dart';
 import 'package:basic/painting_nodes/clip_oval_demo.dart';
 import 'package:basic/painting_nodes/clip_path_demo.dart';
@@ -19,6 +20,9 @@ import 'package:basic/position_sizing_nodes/sized_box_demo.dart';
 import 'package:basic/position_sizing_nodes/transform_demo.dart';
 import 'package:basic/router.dart';
 import 'package:flutter/material.dart';
+
+const SPACE_SMALL = SizedBox(height: 8.0);
+const SPACE_BIG = SizedBox(height: 16.0);
 
 void main() => runApp(MyApp());
 
@@ -73,6 +77,8 @@ class HomePage extends StatelessWidget {
               title: 'FractionallySizedBox',
               route: FractionallySizedBoxDemo(),
             ),
+            SectionTitle(title: 'LAYOUT NODES'),
+            Entry(title: 'Column', route: ColumnDemo()),
           ],
         ),
       ),
@@ -105,9 +111,6 @@ class SectionTitle extends StatelessWidget {
   }
 }
 
-const SPACE_SMALL = SizedBox(height: 8.0);
-const SPACE_BIG = SizedBox(height: 16.0);
-
 class Entry extends StatelessWidget {
   final String title;
   final Widget route;
@@ -120,15 +123,9 @@ class Entry extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        RaisedButton(
-          onPressed: () => navigate(context, route),
-          child: Text(title),
-        ),
-        SPACE_SMALL,
-      ],
+    return RaisedButton(
+      onPressed: () => navigate(context, route),
+      child: Text(title),
     );
   }
 }
