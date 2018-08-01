@@ -1,3 +1,4 @@
+import 'package:basic/event_handling/ignore_pointer_demo.dart';
 import 'package:basic/layout_nodes/column_demo.dart';
 import 'package:basic/painting_nodes/backdrop_filter_demo.dart';
 import 'package:basic/painting_nodes/clip_oval_demo.dart';
@@ -79,6 +80,8 @@ class HomePage extends StatelessWidget {
             ),
             SectionTitle(title: 'LAYOUT NODES'),
             Entry(title: 'Column', route: ColumnDemo()),
+            SectionTitle(title: 'EVENT HANDLING'),
+            Entry(title: 'IgnorePointer', route: IgnorePointerDemo()),
           ],
         ),
       ),
