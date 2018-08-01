@@ -1,3 +1,4 @@
+import 'package:basic/event_handling/absorb_pointer_demo.dart';
 import 'package:basic/event_handling/ignore_pointer_demo.dart';
 import 'package:basic/layout_nodes/column_demo.dart';
 import 'package:basic/painting_nodes/backdrop_filter_demo.dart';
@@ -82,6 +83,7 @@ class HomePage extends StatelessWidget {
             Entry(title: 'Column', route: ColumnDemo()),
             SectionTitle(title: 'EVENT HANDLING'),
             Entry(title: 'IgnorePointer', route: IgnorePointerDemo()),
+            Entry(title: 'AbsorbPointer', route: AbsorbPointerDemo()),
           ],
         ),
       ),
